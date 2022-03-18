@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    user-select:none;
+}
+@font-face{font-family:name;src: url(Name.ttf);}
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Tajawal&display=swap');
+body{
+    width:100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    /* overflow: hidden; */
+
+}
+.tost{
+position: fixed;
+transform: translate(-50%,10px);
+left:50%;
+background:#0eb10e;
+color:#fff;
+padding:4px;
+border-radius: 4px;
+display:flex;
+align-items: center;
+font-size:30px;
+margin:0 4px;
+border-left:solid #fff 2px;
+
+}
+.tost:after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    animation: tost 1s linear forwards;
+}
+
+@keyframes tost{
+    0%{
+
+        width:0%;
+
+    }
+    100%{
+        width:100%;
+    }
+}
+.tost img{
+    width:30px;
+    height:30px
+}
+    .logo{
+    background:#2196f3;
+    text-align:center;
+    color:#fff;
+    text-transform:uppercase;
+    font-family:name;
+    font-size: 30px;
+    font-weight: 400;
+    -webkit-text-stroke: 1px #2e2e2e;
+    letter-spacing:2px;
+    padding:4px;
+}
+
+.ele{
+    flex-grow:1;
+    background:#2c47ca;
+    display: flex;
+    height:10%;
+}
+.tool{
+    background:#2ecc71;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+    width:max-content;
+}
+.tool > div{
+
+    background:#fff;
+    padding: 4px;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:2px;
+    border:solid 1px #212121;
+    text-transform:capitalize;
+}
+.tool > div img{
+    width:25px;
+    height: 25px;
+}
+.ele > .test{
+    flex-grow:1;
+    background:#16a085;
+    margin:10px;
+    border:solid #212121 4px;
+    border-radius:4px;
+    overflow: hidden;
+}
+.test *{
+    box-shadow: 0 0 1px #000;
+}
